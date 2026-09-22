@@ -4,7 +4,7 @@
 public class SocioGeek {
     private int numeroSocio;
     private String nombre;
-    private int puntosFidelidad
+    private int puntosFidelidad;
 
     public SocioGeek(int numeroSocio, String nombre, int puntosFidelidad) {
         this.numeroSocio = numeroSocio;
