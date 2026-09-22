@@ -1,1 +1,22 @@
+//Proporcione métodos getter para todos los atributos.
+//Implemente un método setter para puntosFidelidad con validación defensiva: únicamente aceptará y asignará
+//el valor si la cantidad recibida es mayor o igual a cero; caso contrario, mostrará un mensaje de error por consola.
+public class SocioGeek {
+    private int numeroSocio;
+    private String nombre;
+    private int puntosFidelidad
+
+    public SocioGeek(int numeroSocio, String nombre, int puntosFidelidad) {
+        this.numeroSocio = numeroSocio;
+        this.nombre = nombre;
+        this.puntosFidelidad = puntosFidelidad;
+    }
+}
+
+public class Main {
+    public static void main(String[] args){
+        //En el método main, intente asignar un puntaje válido y luego uno
+        //negativo para comprobar la protección del estado interno del objeto.
+    }
+}
 
