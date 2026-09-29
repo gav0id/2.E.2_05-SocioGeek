@@ -14,4 +14,5 @@ Dentro de la clase `Main`, implementé la lógica de prueba:
 4. Volví a imprimir el estado del objeto. Esto me permitió comprobar por consola que el mensaje de error se dispara correctamente y que el valor de los puntos de fidelidad originales (67) se mantuvo intacto, demostrando que el estado interno del objeto está efectivamente protegido.
 
 Ejecución en consola
-<img width="1366" height="719" alt="imagen" src="https://github.com/user-attachments/assets/9541038c-aa02-4c40-b334-c36fa9d6ff09" />
+<img width="1366" height="721" alt="{8A5ACB82-FB91-4588-8211-B7705F299A2E}" src="https://github.com/user-attachments/assets/bad5f46e-65ef-4a58-9a9e-994b307801c8" />
+
