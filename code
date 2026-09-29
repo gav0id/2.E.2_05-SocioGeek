@@ -1,6 +1,3 @@
-//Proporcione métodos getter para todos los atributos.
-//Implemente un método setter para puntosFidelidad con validación defensiva: únicamente aceptará y asignará
-//el valor si la cantidad recibida es mayor o igual a cero; caso contrario, mostrará un mensaje de error por consola.
 public class SocioGeek {
     private int numeroSocio;
     private String nombre;
@@ -11,12 +8,36 @@ public class SocioGeek {
         this.nombre = nombre;
         this.puntosFidelidad = puntosFidelidad;
     }
+
+    public int getNumeroSocio(){
+        return this.numeroSocio;
+    }
+
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public int getPuntosFidelidad(){
+        return this.puntosFidelidad;
+    }
+    public void setPuntosFidelidad(int puntosFidelidad){
+        if (puntosFidelidad >= 0){
+            this.puntosFidelidad = puntosFidelidad;
+        }else{
+            System.out.println("Los puntos de fidelidad no pueden ser menores a 0");
+        }
+    }
 }
 
 public class Main {
     public static void main(String[] args){
-        //En el método main, intente asignar un puntaje válido y luego uno
-        //negativo para comprobar la protección del estado interno del objeto.
+        
+        SocioGeek socio1 = new SocioGeek(1, "Gabriel", 67);
+
+        System.out.println("Hola " + socio1.getNombre() + " su numero de socio es: " + socio1.getNumeroSocio() + " y sus puntos de fidelidad son: " + socio1.getPuntosFidelidad());
+
+        socio1.setPuntosFidelidad(-15);
+
+        System.out.println("Hola " + socio1.getNombre() + " su numero de socio es: " + socio1.getNumeroSocio() + " y sus puntos de fidelidad son: " + socio1.getPuntosFidelidad());
     }
 }
-
